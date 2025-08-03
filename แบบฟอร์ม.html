@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>-->
+    <title>Document</title>
+
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: 'Kanit', sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section>
+      <h1>เลือกสีสินค้า</h1>
+      <label>สี</label>
+      <input type="radio" name="prdcolor" value="white"> ขาว
+      <input type="radio" name="prdcolor" value="black"> ดำ
+        <input type="radio" name="prdcolor" value="blue"> น้ำเงิน
+        <input type="radio" name="prdcolor" value="gray"> เทา
+        <input type="radio" name="prdcolor" value="red"> แดง
+        <input type="radio" name="prdcolor" value="green"> เขียว
+        <input type="radio" name="prdcolor" value="yellow"> เหลือง
+      <!-- เพิ่มสีอื่นๆ ตามต้องการ -->
+    </section>
+
+    <section>
+      <h1>เลือกขนาดสินค้า</h1>
+      <label for="productsize">ขนาด</label>
+      <select name="productsize" id="productsize">
+        <option value="">--เลือกขนาด--</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+        <option value="3xl">3XL</option>
+      </select>
+    </section>
+    
+    <input type="file" name="productimage" id="productimage" accept="image/*">
+    <input type="submit" value="บันทึกข้อมูล">
+    <input type="reset" value="ล้างข้อมูล">
+    </form>
+
+    <lable for="price">ราคา</label>
+    <label type="name" name="price" id="price" 
+    min="0" step="0.01" value="0.00"></label>
+
+    <lable for="bag">กระเป๋า</label>
+    <input type="number" name="bag" id="bag">
+
+    <lable for="modelname">แก้ว</label>
+    <input type="text" name="glass" id="glass">
+
+    <lable for="hat">หมวก</label>
+    <input type="text" name="hat" id="hat">
+
+    <lable for="umbrella">ร่ม</label>
+    <input type="text" name="umbrella" id="umbrella">
+
+    <lable for="brooch">เข็มกลัด</label>
+    <input type="text" name="brooch" id="brooch">
+
+    <lable for="notebook">สมุด</label>
+    <input type="text" name="notebook" id="notebook">
+
+    <lable for="pen">ปากกา</label>
+    <input type="text" name="pen" id="pen">
+
+    ลุกค้าสามารถเลือกซื้อสินค้าได้ที่ร้านค้าออนไลน์
+    <lable for="First name Last name">ชื่อ นามสกุล</lable>
+    <input type="text" name="fullname" id="fullname" placeholder="ชื่อ นามสกุล">
+
+    <lable for="address">ที่อยู่</lable>
+    <input type="text" name="address" id="address" placeholder="ที่อยู่">
+
+    <lable for="phone">เบอร์โทรศัพท์</lable>
+    <input type="tel" name="phone" id="phone" placeholder="เบอร์โทรศัพท์">
+
+    <lable for="Select product items (specify details)">เลือกรายการสินค้า(ระบุรายละเอียด)</lable>
+    <select name="productitems" id="productitems">
+        <option value="">--เลือกสินค้า--</option>
+        <option value="shirt">เสื้อ</option>
+        <option value="bag">กระเป๋า</option>
+        <option value="glass">แก้ว</option>
+        <option value="hat">หมวก</option>
+        <option value="umbrella">ร่ม</option>
+        <option value="brooch">เข็มกลัด</option>
+        <option value="notebook">สมุด</option>
+        <option value="pen">ปากกา</option>
+    </select>
+
+    <lable for="slip picture"> รูปslip</lable>
+    <input type="file" name="slippicture" id="slippicture" accept="image/*">
+    <input type="submit" value="บันทึกข้อมูล">
+    <input type="reset" value="ล้างข้อมูล">
+
+    <lable for="Date of purchase">วันที่ซื้อ</lable>
+    <input type="date" name="purchaseDate" id="purchaseDate" min="2025-07-15" max="2025-07-15">
+
+    <lable for="Choose delivery or pick up"> เลือกจัดส่งหรือรับเอง</lable>
+    <select name="deliveryOption" id="deliveryOption">
+        <option value="">--เลือกวิธีจัดส่ง--</option>
+        <option value="delivery">จัดส่ง</option>
+        <option value="pickup">รับเอง</option>
+    </select>
+
+    <label for="Payment channels"> ช่องทางชำระเงิน</label>
+    <select name="paymentChannels" id="paymentChannels">
+        <option value="">--เลือกช่องทางชำระเงิน--</option>
+        <option value="bankTransfer">โอนเงินผ่านธนาคาร</option>
+        <option value="cashOnDelivery">เก็บเงินปลายทาง</option>
+        <option value="creditCard">บัตรเครดิต</option>    
+        <option value="mobilePayment">ชำระผ่านมือถือ</option>
+    </select>
+    <input type="submit" value="บันทึกข้อมูล">
+    <input type="reset" value="ล้างข้อมูล">
+    <p>ขอบคุณที่เลือกซื้อสินค้าของเรา!</p>
+</form>
+</div>
+</body>
+</html>
